@@ -1,5 +1,9 @@
 # Students-Marks-Admin
-Student Marks Admin Project for Web-team inductions 2023
+## Description:
+This project is a web application built using EJS, Express, and Mongoose. It provides a user-friendly interface for managing a database of students, subjects, and their corresponding scores.
+The application uses EJS templates to render dynamic HTML pages on the server-side. Express is used to handle HTTP requests and responses, along with routing and middleware. Mongoose is used as an object modeling tool for MongoDB, allowing us to interact with the database in a user-friendly and efficient way.
+
+The application uses EJS templates to render dynamic HTML pages on the server-side. Express is used to handle HTTP requests and responses, along with routing and middleware. Mongoose is used as an object modeling tool for MongoDB, allowing us to interact with the database in a user-friendly and efficient way.
 ## Main Dashboard after adding students and subjects
 ![Screenshot (22)](https://user-images.githubusercontent.com/97730783/225975447-23da0d81-c028-4ef1-92ef-893f25571409.png)
 ## Adding new student in database 
@@ -23,3 +27,13 @@ Student Marks Admin Project for Web-team inductions 2023
 ## Responsive design for phones
 ![Screenshot (27)](https://user-images.githubusercontent.com/97730783/225976930-b8fb41c9-c502-4574-a68e-10b3e8622949.png)
 ![Screenshot (26)](https://user-images.githubusercontent.com/97730783/225976945-456a664c-4b35-4218-84a7-b57707b86b88.png)
+## Image citation:
+Title: Icon of student
+
+Author/Creator: Flaticon
+
+Website name: Flaticon
+
+Website address: https://www.flaticon.com/
+
+Image address: https://cdn-icons-png.flaticon.com/512/2416/2416471.png
