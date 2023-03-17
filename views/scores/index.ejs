@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+<%- include('partials/style') %>
+
+<div class="container">
+  <h1 class="text-center">Scores of <%= student.name %></h1>
+  <div
+  class="input-grp bg-warning px-4 py-4 border rounded shadow p-3 mb-5 "
+  style="max-width: 500px; margin: auto"
+  >
+  <ul class="border px-4 py-3 rounded myul"> 
+    <% for(let subject in subScore){ %>
+      <div class="my-3">
+        <span class=" font-weight-bold"><%= subject %> </span>
+        <span class="float-end"><%= subScore[subject]%></span>
+         
+      </div>
+    <% } %>
+  </ul>
+  <span class="font-weight-bold">Scored marks = <%= marksScored %> / <%= totalMarks%> </span>
+  <span class="float-end">Percentage = <%= percentage %></span>
+  
+  <a href="/students/<%= student.id %>" class="form-control submit-button my-3 btn" role="button">Go Back</a>
+</div>
+</div>
+
+<%- include('partials/footer') %>

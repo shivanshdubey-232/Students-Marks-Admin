@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<%- include('partials/style') %>
+<div class="container bg-warning px-4 py-4 border rounded shadow p-3 mb-5 my-3 mycard">
+  <h1><%= student.name %></h1>
+
+  <ul>
+    <li>Batch : <%= student.batch %></li>
+    <li>Registeration Number : <%= student.registerationNumber %></li>
+    <li>Semester : <%= student.semester %></li>
+  </ul>
+  <a href="/students" class="btn mybtn my-2" role="button">All students</a>
+  <a href="/students/<%= student.id %>/edit" class="btn mybtn" role="button">Edit student</a>
+  <a href="/scores/<%= student.id %>" class="btn mybtn my-2" role="button">Show Results</a>
+  <a href="/scores/<%= student.id %>/edit" class="btn mybtn my-2" role="button">Edit Results</a>
+  <form action="/students/<%=student.id%>?_method=DELETE" method="POST">
+    <button class="form-control my-3 submit-button" >DELETE</button>
+  </form>
+</div>
+<%- include('partials/footer') %>

@@ -1,0 +1,58 @@
+<%- include('partials/header') %>
+<%- include('partials/style') %>
+<div class="container text-center ">
+  <h1>Edit details of <%= student.name %></h1>
+  <form action="/students/<%= student.id %>?_method=PUT" method="POST">
+    <div
+    class="input-grp bg-warning px-4 py-4 border rounded shadow p-3 mb-5 "
+    style="max-width: 500px; margin: auto"
+  >
+    <label for="name"> </label>
+    <input
+      type="text"
+      class="form-control inside"
+      name="name"
+      id="name"
+      value=<%= student.name %>
+      required
+    />
+    <label for="batch"> </label>
+    <input
+      type="text"
+      class="form-control inside"
+      name="batch"
+      id="batch"
+      value=<%= student.batch %>
+      required
+    />
+    <label for="registerationNumber"> </label>
+    <input
+      type="text"
+      class="form-control inside"
+      name="registerationNumber"
+      id="registerationNumber"
+      value=<%= student.registerationNumber %>
+      required
+    />
+    <label for="semester"></label>
+    <input
+      type="number"
+      class="form-control inside"
+      name="semester"
+      id="semester"
+      value=<%= student.semester %>
+      required
+    />
+    <button class="form-control my-3 submit-button" type="submit">
+      SUBMIT
+    </button>
+    
+  </form>
+  <a href="/students" class="form-control my-3 submit-button" role="button">
+    CANCEL
+  </a>
+  
+</div>
+</div>
+
+<%- include('partials/footer') %>

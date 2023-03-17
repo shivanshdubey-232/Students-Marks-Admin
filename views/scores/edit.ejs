@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<%- include('partials/style') %>
+
+<div class="container">
+  <h1 class="text-center">Edit scores of <%= student.name %></h1>
+  <div
+  class="input-grp bg-warning px-4 py-4 border rounded shadow p-3 mb-5 "
+  style="max-width: 500px; margin: auto"
+  >
+  <form action="/scores/<%= student.id %>?_method=PUT" method="POST">
+    <% for(subject of subjects) { %>
+      <input class="form-control inside my-2" type="number" name= <%= subject.id%> placeholder="<%= subject.name %>" required/>
+    <% } %>
+    <button type="submit" class="form-control submit-button my-3 btn">Submit</button>
+  </form>
+  <a href="/students/<%= student.id %>" class="form-control submit-button my- btn">Cancel</a>
+
+</div>
+
+</div>
+<%- include('partials/footer') %>

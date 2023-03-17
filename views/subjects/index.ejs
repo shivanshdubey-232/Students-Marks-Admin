@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<%- include('partials/style') %>
+<div class="container">
+  <h1 class="text-center">All Subjects</h1>
+  <div
+  class="input-grp bg-warning px-4 py-4 border rounded shadow p-3 mb-5 "
+  style="max-width: 500px; margin: auto"
+  >
+  <ul class="border px-4 py-3 rounded myul">
+    <% for(subject of subjects){ %>
+    <div class="my-3">
+      <form action="/subjects/<%=subject.id%>?_method=DELETE" method="POST">
+      <span class=" font-weight-bold"><%= subject.name %></span> 
+        <span class="float-end">
+          <button class="btn btn-danger"> <span class="bi-trash"></span></button>
+        </span>
+      </form>
+    </div>
+    <% } %>
+  </ul>
+  <a href="/subjects/new"  class="form-control submit-button my-3 btn" role="button">Add a new subject</a>
+  <a href="/students"  class="form-control submit-button btn" role="button">Go back</a>
+  </div>
+</div>
+<%- include('partials/footer') %>

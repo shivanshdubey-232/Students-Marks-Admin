@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+<%- include('partials/style') %>
+<div class="container text-center">
+  <h1 class="my-3">Main Dashboard</h1>
+
+  <table
+    class="table table-striped table-hover shadow p-3 mb-5 bg-white"
+    style="max-width: 900px; margin: auto"
+  >
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Registeration Number</th>
+        <th scope="col">Name</th>
+        <th scope="col">Total Marks</th>
+        <th scope="col">Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% let cnt = 1 %> 
+      <% for(student of students){ %>
+      <tr>
+        <th><%= cnt %></th>
+        <td><%= student.registerationNumber %></td>
+        <td>
+          <a class="btn btn-sm" href="/students/<%= student._id %>"
+            ><%= student.name %>
+          </a>
+        </td>
+        <td><%= result[student.id][0] %></td>
+        <td><%= result[student.id][1] %></td>
+      </tr>
+      <% cnt ++ %> <% } %>
+    </tbody>
+  </table>
+  <a class="btn btn-warning my-2" href="/student/new"> Add a new student </a>
+</div>
+<%- include('partials/footer') %>

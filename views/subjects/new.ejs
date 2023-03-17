@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<%- include('partials/style') %>
+
+<div class="container text-center ">
+  <h1>Add new subject</h1>
+  <div
+  class="input-grp bg-warning px-4 py-4 border rounded shadow p-3 mb-5 "
+  style="max-width: 500px; margin: auto"
+  >
+  <form action="/subjects" method="POST">
+    <label for="name"></label>
+    <input class="form-control inside" type="text" name="name" id="name" placeholder="Subject Name" />
+    <label for="code"></label>
+    <input class="form-control inside" type="text" name="code" id="code" placeholder="Subject Code" />
+    <button class="form-control my-3 submit-button" type="submit">Submit</button>
+  </form>
+  </div>
+</div>
+<%- include('partials/footer') %>

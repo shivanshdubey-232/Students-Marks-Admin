@@ -1,0 +1,56 @@
+<%- include('partials/header') %>
+<%- include('partials/style') %>
+<div class="container text-center ">
+  <h1>Add new student</h1>
+  <form action="/students" method="POST">
+    <div
+      class="input-grp bg-warning px-4 py-4 border rounded shadow p-3 mb-5 "
+      style="max-width: 500px; margin: auto"
+    >
+      <label for="name"> </label>
+      <input
+        type="text"
+        class="form-control inside"
+        name="name"
+        id="name"
+        placeholder="John Doe"
+        required
+        />
+        <label for="batch"> </label>
+        <input
+        type="text"
+        class="form-control inside"
+        name="batch"
+        id="batch"
+        placeholder="Student batch"
+        required
+        />
+        <label for="registerationNumber"> </label>
+        <input
+        type="text"
+        class="form-control inside"
+        name="registerationNumber"
+        id="registerationNumber"
+        placeholder="2021UGCS001"
+        required
+        />
+        <label for="semester"></label>
+        <input
+        type="number"
+        class="form-control inside"
+        name="semester"
+        id="semester"
+        placeholder="Semester between 1 & 8"
+        required
+      />
+      <button class="form-control my-3 submit-button" type="submit">
+        SUBMIT
+      </button>
+      <a href="/students" class="form-control submit-button btn" role="button">
+        CANCEL
+      </a>
+
+    </div>
+  </form>
+</div>
+<%- include('partials/footer') %>
