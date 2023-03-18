@@ -24,6 +24,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //---------------------------------------main students route---------------------------------------------
+app.get('/', async(req, res) => {
+  res.redirect('/students'); //redirecting to '/students' route 
+})
+
 app.get('/students', async (req, res) => {
   const students = await Student.find();
   let result = {}
