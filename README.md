@@ -2,9 +2,7 @@
 In order to run the project locally write npm -install to install all dependencies, and then run 'node index.js' to start the app locally.
 ## Description:
 This project is a web application built using EJS, Express, and Mongoose. It provides a user-friendly interface for managing a database of students, subjects, and their corresponding scores.
-The application uses EJS templates to render dynamic HTML pages on the server-side. Express is used to handle HTTP requests and responses, along with routing and middleware. Mongoose is used as an object modeling tool for MongoDB, allowing us to interact with the database in a user-friendly and efficient way.
-
-The application uses EJS templates to render dynamic HTML pages on the server-side. Express is used to handle HTTP requests and responses, along with routing and middleware. Mongoose is used as an object modeling tool for MongoDB, allowing us to interact with the database in a user-friendly and efficient way.
+The application uses EJS templates to render dynamic HTML pages on the server-side. Express is used to handle HTTP requests and responses, along with routing and middleware. Mongoose is used as an object modeling tool for MongoDB, allowing us to interact with the database in a user-friendly and efficient way
 ## Main Dashboard after adding students and subjects
 ![Screenshot (22)](https://user-images.githubusercontent.com/97730783/225975447-23da0d81-c028-4ef1-92ef-893f25571409.png)
 ## Adding new student in database 
